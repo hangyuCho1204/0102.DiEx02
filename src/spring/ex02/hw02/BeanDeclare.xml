@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:component-scan base-package="spring/ex02/hw02"/>
+	
+	<!-- <bean id="bc" class="spring.ex02.hw02.Bookcase"/>
+	<bean id="br" class="spring.ex02.hw02.Dresser"/>
+	<bean id="wr" class="spring.ex02.hw02.Wardrobe"/>
+	
+	<bean id="kr" class="spring.ex02.hw02.KimchiRefrigerator"/>
+	<bean id="nr" class="spring.ex02.hw02.NormalRefrigerator"/>
+	<bean id="ra" class="spring.ex02.hw02.Radio"/>
+	<bean id="tv" class="spring.ex02.hw02.Tv"/> -->
+	
+	<bean id="house3" class="spring.ex02.hw02.House">
+		<property name="price" value="300000"/>
+		<property name="address" value="갱냄"/>
+		<!-- <property name="Furniture">
+			<list>
+				<ref bean="bookcase"/>
+				<ref bean="dresser"/>
+				<ref bean="wardrobe"/>
+			</list>
+		</property>
+		<property name="HomeAppliances">
+			<list>
+				<ref bean="kimchiRefrigerator"/>
+				<ref bean="normalRefrigerator"/>
+				<ref bean="radio"/>
+				<ref bean="tv"/>
+			</list>
+		</property> -->
+	</bean>
+		
+		
+	
+	
+</beans>
